@@ -1,0 +1,46 @@
+{
+  "name": "gvend",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "ayaCs",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "storage": "2",
+      "varName": "embed.gv",
+      "name": "Delete Message"
+    },
+    {
+      "message": "2",
+      "varName": "embed.gv",
+      "info": "1",
+      "find": "✅",
+      "storage": "1",
+      "varName2": "emojo",
+      "name": "Find Reaction"
+    },
+    {
+      "reaction": "1",
+      "varName": "emojo",
+      "info": "6",
+      "storage": "1",
+      "varName2": "ganhador",
+      "name": "Store Reaction Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Giveaway was forced2finish\nthe winner ${tempVars(\"ganhador\")}",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "0"
+}
