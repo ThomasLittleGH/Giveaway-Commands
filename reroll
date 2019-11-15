@@ -1,0 +1,36 @@
+{
+  "name": "reroll",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "wbeKO",
+  "actions": [
+    {
+      "message": "2",
+      "varName": "embed.gv",
+      "info": "1",
+      "find": "✅",
+      "storage": "1",
+      "varName2": "emojo",
+      "name": "Find Reaction"
+    },
+    {
+      "reaction": "1",
+      "varName": "emojo",
+      "info": "6",
+      "storage": "1",
+      "varName2": "ganhador",
+      "name": "Store Reaction Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "New winner is ${tempVars(\"ganhador\")}",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "0"
+}
